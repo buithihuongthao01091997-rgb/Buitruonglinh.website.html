@@ -1,0 +1,484 @@
+
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buitruonglinh | Schedule</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Schedule.css">
+    <script src="Schedule.js" defer></script>
+</head>
+
+
+<body>
+
+
+    <!-- THANH ĐIỀU HƯỚNG -->
+    <!--Navigation-->
+  <header class="site-header" id="header">
+    <a href="index.html" class="wordmark" aria-label="Bùi Trường Linh Official">buitruonglinh<span>OFFICIAL</span></a>
+    <nav class="main-nav" id="nav-menu" aria-label="Menu chính">
+      <a href="index.html">TRANG CHỦ</a>
+      <a href="About.html">GIỚI THIỆU</a>
+      <a href="Music.html">ÂM NHẠC</a>
+      <a href="Schedule.html" class="active" aria-current="page">LỊCH TRÌNH</a>
+      <a href="Shop.html">CỬA HÀNG</a>
+    </nav>
+
+
+    <div class="header-actions">
+       <button class="icon-button" type="button" aria-label="Thông báo" title="Thông báo">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+          <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+        </svg>
+        </button>
+       <a class="icon-button" href="Shop.html" aria-label="Giỏ hàng" title="Giỏ hàng"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 11.2a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 1.9-1.4L22 8H6M10 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM18 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg></a>
+       <button class="menu-toggle" id="menuToggle" type="button" aria-label="Mở menu" aria-expanded="false">☰</button>
+     </div>
+  </header>
+
+
+
+
+
+
+    <main class="container">
+
+
+        <!-- TIÊU ĐỀ CHUNG -->
+        <section class="page-heading">
+            <h1>MEET LINH<br>ON THE ROAD</h1>
+            <p>Upcoming performances and special appearances.</p>
+        </section>
+
+
+
+
+        <!-- ================================= -->
+        <!-- DANH SÁCH SỰ KIỆN -->
+        <!-- ================================= -->
+
+
+        <section id="schedulePage" class="page">
+
+
+            <div class="month-filter">
+                <button type="button">OCT</button>
+                <button type="button">NOV</button>
+                <button type="button">DEC</button>
+            </div>
+
+
+
+
+            <!-- THÁNG 10 -->
+            <section class="event-group">
+                <h2 class="month-title">OCTOBER 2026</h2>
+
+
+                <!-- SỰ KIỆN 1 -->
+                <article class="event-row">
+                    <div class="event-date">
+                        <strong>18</strong>
+                        <span>SUN</span>
+                    </div>
+
+
+                    <div class="event-info">
+                        <span class="event-type">LIVE PERFORMANCE</span>
+                        <h3>Special Music Event</h3>
+                        <p>Hà Nội, Việt Nam</p>
+                    </div>
+
+
+                    <button class="detail-btn"
+                        data-target="detailFirst" type="button">
+                        DETAIL &gt;
+                    </button>
+                </article>
+
+
+
+
+                <!-- SỰ KIỆN 2 -->
+                <article class="event-row">
+                    <div class="event-date">
+                        <strong>25</strong>
+                        <span>SUN</span>
+                    </div>
+
+
+                    <div class="event-info">
+                        <span class="event-type">APPEARANCE</span>
+                        <h3>Music &amp; Community Event</h3>
+                        <p>Hà Nội, Việt Nam</p>
+                    </div>
+
+
+                    <button class="detail-btn"
+                        data-target="detailSecond" type="button">
+                        DETAIL &gt;
+                    </button>
+                </article>
+            </section>
+
+
+
+
+            <!-- THÁNG 11 -->
+            <section class="event-group">
+                <h2 class="month-title">NOVEMBER 2026</h2>
+
+
+                <!-- SỰ KIỆN 3 -->
+                <article class="event-row">
+                    <div class="event-date">
+                        <strong>08</strong>
+                        <span>SUN</span>
+                    </div>
+
+
+                    <div class="event-info">
+                        <span class="event-type">FAN EVENT</span>
+                        <h3>Meet &amp; Greet</h3>
+                        <p>Hà Nội, Việt Nam</p>
+                    </div>
+
+
+                    <button class="detail-btn"
+                        data-target="detailThird" type="button">
+                        DETAIL &gt;
+                    </button>
+                </article>
+            </section>
+
+
+
+
+            <!-- THÁNG 12 -->
+            <section class="event-group">
+                <h2 class="month-title">DECEMBER 2026</h2>
+
+
+                <!-- SỰ KIỆN 4 -->
+                <article class="event-row">
+                    <div class="event-date">
+                        <strong>20</strong>
+                        <span>SUN</span>
+                    </div>
+
+
+                    <div class="event-info">
+                        <span class="event-type">SPECIAL EVENT</span>
+                        <h3>Year End Music Night</h3>
+                        <p>Hà Nội, Việt Nam</p>
+                    </div>
+
+
+                    <button class="detail-btn"
+                        data-target="detailFourth" type="button">
+                        DETAIL &gt;
+                    </button>
+                </article>
+            </section>
+
+
+        </section>
+
+
+
+
+
+
+        <!-- ================================= -->
+        <!-- CHI TIẾT SỰ KIỆN 1 -->
+        <!-- ================================= -->
+
+
+        <section id="detailFirst" class="page detail-page hidden">
+
+
+            <div class="selected-event">
+                <div class="selected-date">
+                    <span class="month-title-sub">OCTOBER 2026</span>
+                    <strong>18</strong>
+                    <span>SUN</span>
+                </div>
+
+
+                <div class="selected-info">
+                    <span class="event-type">LIVE PERFORMANCE</span>
+                    <h3>Special Music Event</h3>
+                    <p>Hà Nội, Việt Nam</p>
+                </div>
+
+
+                <button class="back-btn" type="button">
+                    BACK &gt;
+                </button>
+            </div>
+
+
+            <div class="detail-content">
+                <img class="event-poster"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_8YMUuilFWROI4UfYZCN3r3r4jSWQRyytz_jHI0qIhq7WZCSVPHsh92Jr&s=10">
+
+
+                <div class="event-description">
+                    <h2>TỪNG NGÀY</h2>
+
+
+                    <h3>A NIGHT OF MUSIC AND EMOTIONS</h3>
+
+
+                    <p>
+                        Hãy cùng Bùi Trường Linh tham gia đêm biểu diễn
+                        âm nhạc trực tiếp đặc biệt tại Hà Nội. Sự kiện
+                        mang âm nhạc của anh đến với sân khấu, mang đến
+                        cho khán giả cơ hội thưởng thức những ca khúc
+                        quen thuộc trong không gian trình diễn trực tiếp.
+                    </p>
+
+
+                    <p>
+                        Từ những giai điệu giàu cảm xúc đến các màn trình
+                        diễn đáng nhớ, sự kiện là dịp tôn vinh sự kết nối
+                        giữa nghệ sĩ và khán giả thông qua âm nhạc.
+                    </p>
+
+
+                    <p class="ticket-link">
+                        Mua vé tại đây:
+                        <a href="https://www.facebook.com/buitruonglinhofficial/?locale=vi_VN" target="_blank">Link</a>
+                    </p>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+        <!-- ================================= -->
+        <!-- CHI TIẾT SỰ KIỆN 2 -->
+        <!-- ================================= -->
+
+
+        <section id="detailSecond" class="page detail-page hidden">
+
+
+            <div class="selected-event">
+                <div class="selected-date">
+                    <span class="month-title-sub">OCTOBER 2026</span>
+                    <strong>25</strong>
+                    <span>SUN</span>
+                </div>
+
+
+                <div class="selected-info">
+                    <span class="event-type">APPEARANCE</span>
+                    <h3>Music &amp; Community Event</h3>
+                    <p>Hà Nội, Việt Nam</p>
+                </div>
+
+
+                <button class="back-btn" type="button">
+                    BACK &gt;
+                </button>
+            </div>
+
+
+            <div class="detail-content">
+                <img class="event-poster"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyhCJ3FZF6WoXxfzz9sHW7DuUfZMzFxmfndv76qkQbGe8hz6v_XikZFD0&s=10"
+                    alt="Poster Music and Community Event">
+
+
+                <div class="event-description">
+                    <h2>RISING STAR OF THE YEAR</h2>
+
+
+                    <h3>CÙNG KẾT NỐI VỚI NHAU CÙNG NHỮNG GIAI ĐIỆU ÂM NHẠC</h3>
+
+
+                    <p>
+                        Buổi gặp gỡ đặc biệt này là dịp để Bùi Trường Linh đến gần hơn với người hâm mộ thông qua những cuộc trò chuyện, chia sẻ và hoạt động giao lưu thân mật. Đây là cơ hội để khán giả trực tiếp gặp gỡ nghệ sĩ, lắng nghe những câu chuyện về hành trình âm nhạc cũng như hiểu hơn về con người phía sau những giai điệu.</p>
+                        <p>Không chỉ dừng lại ở âm nhạc, sự kiện còn tạo nên một không gian gần gũi, nơi người hâm mộ có thể giao lưu, chia sẻ trải nghiệm, bày tỏ tình cảm và kết nối với nhau thông qua tình yêu dành cho Bùi Trường Linh.
+                    </p>
+
+
+                    <p class="ticket-link">
+                        Tìm hiểu thêm:
+                        <a href="https://www.facebook.com/buitruonglinhofficial/?locale=vi_VN" target="_blank">Link</a>
+                    </p>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+        <!-- ================================= -->
+        <!-- CHI TIẾT SỰ KIỆN 3 -->
+        <!-- ================================= -->
+
+
+        <section id="detailThird" class="page detail-page hidden">
+
+
+            <div class="selected-event">
+                <div class="selected-date">
+                    <span class="month-title-sub">NOVEMBER 2026</span>
+                    <strong>08</strong>
+                    <span>SUN</span>
+                </div>
+
+
+                <div class="selected-info">
+                    <span class="event-type">FAN EVENT</span>
+                    <h3>Meet &amp; Greet</h3>
+                    <p>Hà Nội, Việt Nam</p>
+                </div>
+
+
+                <button class="back-btn" type="button">
+                    BACK &gt;
+                </button>
+            </div>
+
+
+            <div class="detail-content">
+                <img class="event-poster"
+                    src="https://bazaarvietnam.vn/wp-content/uploads/2026/03/buitruonglinh-concert-tung-ngay-bzvn-1.jpg"
+                    alt="Poster Meet and Greet">
+
+
+                <div class="event-description">
+                    <h2>A LITTLE CLOSER</h2>
+
+
+                    <h3>A DAY TO SHARE, CONNECT AND CREATE MEMORIES</h3>
+
+
+                    <p>
+                        Không chỉ đơn thuần là một buổi gặp gỡ người hâm mộ, A Little Closer là dịp đặc biệt để Bùi Trường Linh và khán giả cùng gặp gỡ, chia sẻ câu chuyện và tạo nên những kỷ niệm đáng nhớ thông qua những cuộc trò chuyện thân mật, hoạt động thú vị và khoảnh khắc ý nghĩa. Sự kiện là dịp tôn vinh tình cảm, sự ủng hộ và mối liên kết đặc biệt giữa Linh và cộng đồng người hâm mộ.
+                    </p>
+
+
+                    <p>
+                        Hãy cùng Bùi Trường Linh tạo nên những khoảnh khắc khó quên ngay lúc này nhé!
+                    </p>
+
+
+                    <p class="ticket-link">
+                        Tìm hiểu thêm:
+                        <a href="https://www.facebook.com/buitruonglinhofficial/?locale=vi_VN" target="_blank">Link</a>
+                    </p>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+        <!-- ================================= -->
+        <!-- CHI TIẾT SỰ KIỆN 4 -->
+        <!-- ================================= -->
+
+
+        <section id="detailFourth" class="page detail-page hidden">
+
+
+            <div class="selected-event">
+                <div class="selected-date">
+                    <span class="month-title-sub">DECEMBER 2026</span>
+                    <strong>20</strong>
+                    <span>SUN</span>
+                </div>
+
+
+                <div class="selected-info">
+                    <span class="event-type">SPECIAL EVENT</span>
+                    <h3>Year End Music Night</h3>
+                    <p>Hà Nội, Việt Nam</p>
+                </div>
+
+
+                <button class="back-btn" type="button">
+                    BACK &gt;
+                </button>
+            </div>
+
+
+            <div class="detail-content">
+                <img class="event-poster"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkM0DC7DPZA6fsEcRf-cf0TX4DnvESAREebNbQ1UIOYOdFIcsuUICF90E&s=10"
+                    alt="Poster Year End Music Night">
+
+
+                <div class="event-description">
+                    <h2>AFTERGLOW</h2>
+
+
+                    <h3>LET THE MUSIC STAY WITH US</h3>
+
+
+                    <p>
+                        Khi năm cũ dần khép lại, Afterglow mời khán giả cùng Bùi Trường Linh trải qua một đêm nhạc đáng nhớ, ngập tràn âm nhạc và cảm xúc. Thông qua những màn trình diễn cuốn hút cùng các giai điệu thân thuộc, concert sẽ tái hiện những kỷ niệm, câu chuyện và cảm xúc đã tạo nên dấu ấn trong suốt một năm qua.
+                    </p>
+
+
+                    <p>
+                        Không chỉ đơn thuần là một buổi biểu diễn âm nhạc, đây còn là dịp để cùng nhìn lại hành trình đã qua, tạo nên những kỷ niệm mới và chào đón một chương mới. Hãy để mỗi giai điệu trở thành lời kết đẹp cho năm cũ và khởi đầu ý nghĩa cho những điều sắp tới.
+                    </p>
+
+
+                    <p class="ticket-link">
+                        Tìm hiểu thêm:
+                        <a href="https://www.facebook.com/buitruonglinhofficial/?locale=vi_VN" target="_blank">Link</a>
+                    </p>
+                </div>
+            </div>
+
+
+        </section>
+
+
+    </main>
+<footer class="footer">
+  <div class="footer-inner">
+    <h3>CONNECT WITH BÙI TRƯỜNG LINH</h3>
+    <p>Công ty quản lý: DAO Music Entertainment</p>
+    <p>Booking: contact@sturdyhill.com</p>
+    <p>Hotline: 0966445533</p>
+    <p class="copyright">© 2026 BÙI TRƯỜNG LINH · Đồ án môn Thiết kế Web</p>
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>
+
+
+
+

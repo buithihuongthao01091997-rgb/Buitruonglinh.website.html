@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>buitruonglinh | Music</title>
+<!-- KẾT NỐI FILE CSS: style.css phải nằm cùng thư mục với index.html -->
+<link rel="stylesheet" href="Music.css">
+<!-- KẾT NỐI FILE JAVASCRIPT: defer giúp JS chạy sau khi HTML được phân tích -->
+<script src="Music.js" defer></script>
+
+<!-- Tải font Montserrat từ Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--Navigation-->
+<header class="site-header" id="header">
+  <a href="index.html" class="wordmark" aria-label="Bùi Trường Linh Official">buitruonglinh<span>OFFICIAL</span></a>
+  <nav class="main-nav" id="nav-menu" aria-label="Menu chính">
+    <a href="index.html">TRANG CHỦ</a>
+    <a href="About.html">GIỚI THIỆU</a>
+    <a href="Music.html" class="active" aria-current="page">ÂM NHẠC</a>
+    <a href="Schedule.html">LỊCH TRÌNH</a>
+    <a href="Shop.html">CỬA HÀNG</a>
+  </nav>
+  <div class="header-actions">
+     <button class="icon-button" type="button" aria-label="Thông báo" title="Thông báo">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+      </svg>
+      </button>
+     <a class="icon-button" href="Shop.html" aria-label="Giỏ hàng" title="Giỏ hàng"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 11.2a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 1.9-1.4L22 8H6M10 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM18 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg></a>
+     <button class="menu-toggle" id="menuToggle" type="button" aria-label="Mở menu" aria-expanded="false">☰</button>
+   </div>
+</header>
+<main class="container">
+  <!-- CỘT TRÁI: BÀI HÁT MỚI NHẤT VÀ SPOTIFY -->
+  <section class="left-column">
+    <div class="latest-release">
+      <!-- ẢNH BÌA LỚN: thay LINK_ANH_SOM_NHU_VAY bằng URL ảnh thật của bạn -->
+      <img
+        class="main-cover"
+        src="https://i.postimg.cc/gkcJdXbp/som-nhu-vay.jpg"
+        alt="Bìa single Sớm Như Vậy"
+      >
+
+      <div class="release-info">
+        <p class="small-title">Latest Release · 09.04.2026</p>
+        <h1>Sớm Như Vậy</h1>
+        <p class="description">Single mới nhất của buitruonglinh. Một hai câu về câu chuyện bài hát.</p>
+
+        <div class="buttons">
+          <!-- Nút PLAY mở bài hát trên Spotify -->
+          <a class="btn btn-play" href="https://open.spotify.com/track/0GXZXSDFSbJjqdGifjSaig" target="_blank" rel="noopener">
+            ▶ PLAY
+          </a>
+          <!-- Nút WATCH MV mở MV chính thức trên YouTube -->
+          <a class="btn btn-watch" href="https://www.youtube.com/watch?v=6hNenqz0ISA" target="_blank" rel="noopener">
+            WATCH MV
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Khung giới thiệu Spotify và danh sách bài hát -->
+    <div class="spotify-box">
+      <div class="spotify-header">
+        <!-- ẢNH ĐẠI DIỆN SPOTIFY: thay LINK_ANH_DAI_DIEN bằng URL ảnh thật -->
+        <img
+          class="artist-avatar"
+          src="https://i.postimg.cc/xTjCYJV9/buitruonglinh.jpg"
+          alt="Ảnh đại diện buitruonglinh"
+        >
+        <div>
+          <p class="artist-name">buitruonglinh</p>
+          <p class="artist-subtitle">Popular tracks</p>
+          <a class="follow-link" href="https://open.spotify.com/artist/7Cp2hGcriAaDUAWpXnSEwm" target="_blank" rel="noopener">Follow on Spotify</a>
+        </div>
+      </div>
+
+
+
+
+      <div class="track-list">
+        <div class="track">
+          <a href="https://open.spotify.com/track/7aBUKC55ymgBw7M5gdppte" target="_blank" rel="noopener">▶ MRT (feat. Xuân Định K.Y, buitruonglinh, CAPTAIN BOY & HYO)</a>
+          <span class="track-time">05:31</span>
+        </div>
+        <div class="track">
+          <a href="https://open.spotify.com/track/7mblTCdc14ylJ1JW71MODb" target="_blank" rel="noopener">Giờ Thì</a>
+          <span class="track-time">04:37</span>
+        </div>
+        <div class="track">
+          <a href="https://open.spotify.com/track/3Ids3RXurYBgySph53qWnB" target="_blank" rel="noopener">Từng Ngày Yêu Em</a>
+          <span class="track-time">03:36</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- CỘT PHẢI: DANH SÁCH ALBUM / SINGLES -->
+  <section class="right-column">
+    <div class="discography-top">
+      <h2>DISCOGRAPHY</h2>
+
+
+
+
+      <!-- Bấm vào từng nút để lọc album theo thể loại -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">ALL</button>
+        <button class="filter-btn" data-filter="single">SINGLES</button>
+        <button class="filter-btn" data-filter="collab">COLLABS</button>
+        <button class="filter-btn" data-filter="album">ALBUM</button>
+      </div>
+    </div>
+
+
+
+
+    <div class="album-grid">
+      <!-- Mỗi album có data-type để JavaScript nhận biết khi lọc -->
+      <article class="album-card" data-type="single">
+        <!-- ẢNH ALBUM: thay LINK_ANH_SOM_NHU_VAY bằng URL ảnh bìa tương ứng -->
+        <img
+          class="album-cover cover-one"
+          src="https://i.postimg.cc/gkcJdXbp/som-nhu-vay.jpg"
+          alt="Bìa album Sớm Như Vậy"
+          loading="lazy"
+        >
+        <div class="album-info">
+          <div class="album-text">
+            <h3>Sớm Như Vậy</h3>
+            <p>Single · 2026</p>
+          </div>
+          <a class="round-play" href="https://open.spotify.com/track/0GXZXSDFSbJjqdGifjSaig" target="_blank" rel="noopener" aria-label="Nghe Sớm Như Vậy trên Spotify">▶</a>
+        </div>
+      </article>
+
+
+
+
+      <article class="album-card" data-type="single">
+        <!-- ẢNH ALBUM: thay LINK_ANH_VAN_VUONG bằng URL ảnh bìa tương ứng -->
+        <img
+          class="album-cover cover-two"
+          src="https://i.postimg.cc/4N4dZ7kM/van-vuong.jpg"
+          alt="Bìa album Vẫn Vương"
+          loading="lazy"
+        >
+        <div class="album-info">
+          <div class="album-text">
+            <h3>Vẫn Vương</h3>
+            <p>Single · 2025</p>
+          </div>
+          <a class="round-play" href="https://open.spotify.com/track/0wZQeFW2ZcIbCTnxnKx5O9" target="_blank" rel="noopener" aria-label="Nghe Vẫn Vương trên Spotify">▶</a>
+        </div>
+      </article>
+
+
+
+
+      <article class="album-card" data-type="single">
+        <!-- ẢNH ALBUM: thay LINK_ANH_GIO_THI bằng URL ảnh bìa tương ứng -->
+        <img
+          class="album-cover cover-three"
+          src="https://i.postimg.cc/xjZ9MJVr/images.jpg"
+          alt="Bìa album Giờ Thì"
+          loading="lazy"
+        >
+        <div class="album-info">
+          <div class="album-text">
+            <h3>Giờ Thì</h3>
+            <p>Single · 2024</p>
+          </div>
+          <a class="round-play" href="https://open.spotify.com/track/7mblTCdc14ylJ1JW71MODb" target="_blank" rel="noopener" aria-label="Nghe Giờ Thì trên Spotify">▶</a>
+        </div>
+      </article>
+
+
+
+
+      <article class="album-card" data-type="single">
+        <!-- ẢNH ALBUM: thay LINK_ANH_NOI_ANH_THUOC_VE bằng URL ảnh bìa tương ứng -->
+        <img
+          class="album-cover cover-four"
+          src="https://i.postimg.cc/HsWxHc1p/noi-anh-thuoc-ve.jpg"
+          alt="Bìa album Nơi Anh Thuộc Về"
+          loading="lazy"
+        >
+        <div class="album-info">
+          <div class="album-text">
+            <h3>Nơi Anh Thuộc Về</h3>
+            <p>Single · 2026</p>
+          </div>
+          <a class="round-play" href="https://open.spotify.com/album/5SMqtKAg4qxG7wVMn5wtjU" target="_blank" rel="noopener" aria-label="Nghe Nơi Anh Thuộc Về trên Spotify">▶</a>
+        </div>
+      </article>
+
+
+
+
+      <article class="album-card" data-type="collab">
+        <!-- ẢNH ALBUM: thay LINK_ANH_THE_GIOI_CUA_ANH bằng URL ảnh bìa tương ứng -->
+        <img
+          class="album-cover cover-five"
+          src="https://i.postimg.cc/28j6mbNN/the-gioi-cua-anh.jpg"
+          alt="Bìa album Thế Giới Của Anh"
+          loading="lazy"
+        >
+        <div class="album-info">
+          <div class="album-text">
+            <h3>Thế Giới Của Anh</h3>
+            <p>Collab</p>
+          </div>
+          <a class="round-play" href="https://open.spotify.com/track/0CY9y1F7RcRSV3raHljdxu" target="_blank" rel="noopener" aria-label="Nghe Thế Giới Của Anh trên Spotify">▶</a>
+        </div>
+      </article>
+
+
+
+
+      <article class="album-card" data-type="album">
+        <!-- ẢNH ALBUM: thay LINK_ANH_TUNG_NGAY_NHU_MAI_MAI bằng URL ảnh bìa tương ứng -->
+        <img
+          class="album-cover cover-six"
+          src="https://i.postimg.cc/zG02MQSJ/sddefault.jpg"
+          alt="Bìa album Từng Ngày Như Mãi Mãi"
+          loading="lazy"
+        >
+        <div class="album-info">
+          <div class="album-text">
+            <h3>Từng Ngày Như Mãi Mãi</h3>
+            <p>Album · 2024</p>
+          </div>
+          <a class="round-play" href="https://open.spotify.com/album/2DCbDdIBNRxx0SxLtgyd4D" target="_blank" rel="noopener" aria-label="Nghe Từng Ngày Như Mãi Mãi trên Spotify">▶</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <h3>CONNECT WITH BÙI TRƯỜNG LINH</h3>
+    <p>Công ty quản lý: DAO Music Entertainment</p>
+    <p>Booking: contact@sturdyhill.com</p>
+    <p>Hotline: 0966445533</p>
+    <p class="copyright">© 2026 BÙI TRƯỜNG LINH · Đồ án môn Thiết kế Web</p>
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>
+
